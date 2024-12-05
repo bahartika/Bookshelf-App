@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf App</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Tambah Buku Baru</h2>
+        <form id="bookForm" data-testid="bookForm">
+          <div>
+            <label for="bookFormTitle">Judul</label>
+            <input id="bookFormTitle" type="text" required data-testid="bookFormTitleInput" placeholder="Masukkan judul..." />
+          </div>
+          <div>
+            <label for="bookFormAuthor">Penulis</label>
+            <input id="bookFormAuthor" type="text" required data-testid="bookFormAuthorInput" placeholder="Masukkan penulis..." />
+          </div>
+          <div>
+            <label for="bookFormYear">Tahun</label>
+            <input id="bookFormYear" type="number" required data-testid="bookFormYearInput" min="1900" max="2025" placeholder="Masukkan tahun terbit..." />
+          </div>
+          <div>
+            <button id="addToIncomplete" type="button" data-testid="addToIncompleteButton">Sedang Dibaca</button>
+            <button id="addToComplete" type="button" data-testid="addToCompleteButton">Selesai Dibaca</button>
+            <button id="clearAllBooks" data-testid="clearAllBooksButton" type="button">Hapus Semua Buku</button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Cari Buku</h2>
+        <form id="searchBook" data-testid="searchBookForm">
+          <input id="searchBookTitle" type="text" data-testid="searchBookFormTitleInput" placeholder="Judul yang dicari..." />
+          <button id="searchSubmit" type="submit" data-testid="searchBookFormSubmitButton">Cari</button>
+        </form>
+      </section>
+
+      <article>
+        <section>
+          <h2>Belum selesai dibaca</h2>
+          <div id="incompleteBookList" data-testid="incompleteBookList"></div>
+        </section>
+
+        <section>
+          <h2>Selesai dibaca</h2>
+          <div id="completeBookList" data-testid="completeBookList"></div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Created by ©Bahartika, Study at Dicoding Academy</p>
+    </footer>
+
+    <script src="./javascript/app.js" type="module"></script>
+  </body>
+</html>

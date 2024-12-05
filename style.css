@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Rum+Raisin&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Afacad Flux", sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+main {
+  width: 80%;
+  margin: 30px auto;
+}
+
+/* Styling untuk setiap section */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+button#clearAllBooks {
+  background-color: #f44336;
+}
+
+button#clearAllBooks:hover {
+  background-color: #d32f2f;
+}
+
+form#searchBook {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Styling untuk book list */
+#incompleteBookList,
+#completeBookList {
+  margin-top: 1rem;
+  max-width: 500px;
+}
+
+#incompleteBookList div,
+#completeBookList div {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-item {
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 2rem;
+}
+
+p {
+  color: #777;
+  font-size: 1rem;
+}
+
+button {
+  margin-right: 10px;
+}
+
+/* Styling untuk tombol pada setiap buku */
+button[data-testid="bookItemIsCompleteButton"] {
+  background-color: #ff9800;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background-color: #f44336;
+}
+
+button[data-testid="bookItemEditButton"] {
+  background-color: #2196f3;
+}
+
+/* Styling untuk tombol-tombol di dalam book item */
+button[data-testid="bookItemIsCompleteButton"]:hover {
+  background-color: #fb8c00;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+  background-color: #d32f2f;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+  background-color: #1976d2;
+}
+
+article {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: start;
+}
+
+footer {
+  background-color: #45a049;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #f4f7fc;
+  font-weight: bold;
+}
+
+/* Responsif Design */
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 25px;
+  }
+
+  form#searchBook {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  article {
+    flex-direction: column;
+  }
+
+  form#bookForm button,
+  .book-item button {
+    margin-top: 1rem;
+  }
+
+  footer {
+    background-color: #45a049;
+    padding: 1rem;
+    color: white;
+  }
+}
