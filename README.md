@@ -1,38 +1,12 @@
-# Bookshelf App Starter Project
+# Bookshelf App
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+Halo, ini adalah projek dari tugas akhir saya pada kelas "Belajar Membuat Front-End Web untuk Pemula", yaitu membuat web Bookshel App.
 
-## Ketentuan Pengerjaan Tugas
+Web ini dibuat dengan menggunakan HTML, CSS, dan Javascript, termasuk local storage browser, dan tidak menggunakan framework dan library apapun.
 
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
+Bookshelf App ini mudah digunakan, user dapat melihat tampilan sederhana yang langsung menampilkan 4 section.
+Section pertama yaitu Tambah buku baru, input yang diperlukan yaitu judul, nama penulis, dan tahun. 3 tombol submit mengarahkan apakah akan dimasukkan ke dalam rak sedang dibaca, masuk ke dalam rak selesai dibaca, atau Hapus semua buku yang tersimpan.
+Section kedua yaitu Cari buku, yaitu untuk mencari buku dengan memasukkan nama judul buku yang dicari.
+Section ketiga dan keempat yaitu rak sedang dibaca dan selesai dibaca, tampilan akan menunjukkan buku apa saja yang sudah dimasukkan ke dalam rak tersebut.
 
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
-
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
-
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
-
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
-
-Selamat mengerjakan dan sukses selalu!
+Terakhir, kelas yang saya ikuti ini adalah hasil pembelajaran dari platform Dicoding, pada program beasiswa IDCamp yang diselenggarakan oleh Indosat Ooredoo Hutchison. Setelah pengumpulan tugas akhir ini, saya edit kembali untuk menambahkan fitur hapus semua buku dan mengubah sedikit tampilan supaya lebih menarik.
