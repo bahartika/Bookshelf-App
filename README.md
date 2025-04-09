@@ -1,12 +1,71 @@
-# Bookshelf App
+# 📚 Bookshelf App
 
-Halo, ini adalah projek dari tugas akhir saya pada kelas "Belajar Membuat Front-End Web untuk Pemula", yaitu membuat web Bookshel App.
+Halo! 👋  
+Ini adalah proyek tugas akhir saya dari kelas **"Belajar Membuat Front-End Web untuk Pemula"** di platform **Dicoding**, sebagai bagian dari program beasiswa **IDCamp oleh Indosat Ooredoo Hutchison**.
 
-Web ini dibuat dengan menggunakan HTML, CSS, dan Javascript, termasuk local storage browser, dan tidak menggunakan framework dan library apapun.
+---
 
-Bookshelf App ini mudah digunakan, user dapat melihat tampilan sederhana yang langsung menampilkan 4 section.
-Section pertama yaitu Tambah buku baru, input yang diperlukan yaitu judul, nama penulis, dan tahun. 3 tombol submit mengarahkan apakah akan dimasukkan ke dalam rak sedang dibaca, masuk ke dalam rak selesai dibaca, atau Hapus semua buku yang tersimpan.
-Section kedua yaitu Cari buku, yaitu untuk mencari buku dengan memasukkan nama judul buku yang dicari.
-Section ketiga dan keempat yaitu rak sedang dibaca dan selesai dibaca, tampilan akan menunjukkan buku apa saja yang sudah dimasukkan ke dalam rak tersebut.
+## ✨ Tentang Proyek
 
-Terakhir, kelas yang saya ikuti ini adalah hasil pembelajaran dari platform Dicoding, pada program beasiswa IDCamp yang diselenggarakan oleh Indosat Ooredoo Hutchison. Setelah pengumpulan tugas akhir ini, saya edit kembali untuk menambahkan fitur hapus semua buku dan mengubah sedikit tampilan supaya lebih menarik.
+**Bookshelf App** adalah aplikasi web sederhana untuk mencatat dan mengelola daftar buku yang sedang atau sudah dibaca. Aplikasi ini dibangun **tanpa framework atau library**—hanya menggunakan **HTML, CSS, dan JavaScript vanilla**, serta memanfaatkan **Local Storage** untuk menyimpan data buku secara permanen di browser.
+
+---
+
+## 🧩 Fitur-fitur
+
+1. **Tambah Buku Baru**  
+   Pengguna dapat menambahkan buku dengan mengisi:
+
+   - Judul
+   - Penulis
+   - Tahun Terbit
+
+   Setelah itu, pengguna bisa memilih:
+
+   - 📘 Menambahkan ke rak **Sedang Dibaca**
+   - ✅ Menambahkan ke rak **Selesai Dibaca**
+   - 🗑️ Menghapus semua buku yang tersimpan
+
+2. **Cari Buku**  
+   Cari buku berdasarkan **judul** untuk menemukannya dengan cepat.
+
+3. **Rak Buku**
+   - **📚 Sedang Dibaca**  
+     Menampilkan semua buku yang sedang dibaca.
+   - **✔️ Selesai Dibaca**  
+     Menampilkan buku-buku yang sudah selesai dibaca.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Local Storage
+
+---
+
+## 🖼️ Tampilan
+
+> `![Preview Website](./assets/preview.png)`
+
+---
+
+## 🎯 Pengembangan Lanjutan
+
+Setelah tugas dikumpulkan, saya sempat melakukan beberapa penyempurnaan:
+
+- Menambahkan fitur **hapus semua buku**
+- Mengubah sedikit tampilan agar lebih menarik dan ramah pengguna
+
+---
+
+## 📌 Catatan
+
+Proyek ini merupakan bagian dari proses belajar saya di dunia pengembangan web. Saya sangat terbuka terhadap saran atau masukan untuk pengembangan selanjutnya. 🙌
+
+---
+
+Terima kasih sudah mampir!  
+Jangan lupa kasih ⭐ kalau kamu suka dengan project ini 😄
